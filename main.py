@@ -1,12 +1,14 @@
 import openai
 from telebot import TeleBot, types
 from fuzzywuzzy import process
+from keepalive import keep_alive
 
 TOKEN = 'YOUR TELEGRAM API TOKEN'
 openai.api_key = 'YOUR OPENAI API TOKEN'
 
 bot = TeleBot(TOKEN)
 
+keep_alive()
 
 # Load questions and answers from the file into a dictionary
 def load_data_from_file():
