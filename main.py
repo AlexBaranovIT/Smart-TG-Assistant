@@ -10,6 +10,7 @@ bot = TeleBot(TOKEN)
 
 keep_alive()
 
+
 # Load questions and answers from the file into a dictionary
 def load_data_from_file():
     data = {}
