@@ -42,6 +42,7 @@ def rephrase_answer(answer):
     )
     return response.choices[0].text.strip()
 
+
 @bot.message_handler(func=lambda m: True)
 def send_response(message):
     user_query = message.text
